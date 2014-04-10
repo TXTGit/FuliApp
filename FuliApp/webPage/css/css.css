@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-user-select: none;
+}
+:root {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: 14px;
+  color: #898989;
+  line-height: 1.75em;
+  background: transparent;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.hide{display: none;}
+#main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+html.pattern{background: url(../img/bg.png) repeat;}
+
+#main .imgBox img{width: 100%}
+#main p{margin: 10px 15px;}
+
+/*banner*/
+#swipeNav { position: absolute; bottom: 12px; width: 100%;pointer-events: none;list-style: none;margin: 0; overflow: hidden; word-break: break-all; white-space: nowrap; text-overflow: ellipsis; color: #fff;padding: 5px 0 ; text-indent: 10px; z-index: 1000; text-align: center; }
+#swipeNav li { display: inline-block; margin: 0 4px; width: 8px; height: 8px; border-radius: 4px; background: rgba(144, 144, 144, 0.8); }
+#swipeNav li.on { background: rgba(255, 255, 255, 1); }
+.swipe { overflow: hidden; visibility: hidden; position: relative; }
+.swipe-wrap { overflow: hidden; position: relative; z-index: 10; }
+.swipe-wrap > div { float: left; width: 100%; position: relative; }
+.swipe-wrap a { display: block; }
+#mySwipe { width: 100%; margin: 0 auto;}
+#mySwipe img { width: 100%; vertical-align: middle;}
+
+/*fixBar*/
+#fixBar{background-color: rgba(0,0,0,0.3);color: #fff;font-size: 16px;padding: 4px;width: 128px;position: fixed; right: -101px;top: 18%;z-index: 9999}
+#fixBar>.fl{vertical-align: middle;}
+#showFixBar,#hideFixBar{padding: 0 0 0 4px;}
+#fixBar>.fr{padding: 0 6px 0 4px;}
+#fixBar>.fr>.item{color: #fff;display: block;padding: 7px 10px;border-bottom: 1px solid #fff;}
+#fixBar>.fr>.item.small{padding: 7px 8px;font-size: 12px}
+#fixBar>.fr>.item.least{padding: 7px 0px;-webkit-text-size-adjust:none;font-size: 10px;}
+#fixBar>.fr>.item:last-child{border-bottom:none;}
+#fixBar>.fr>.item.on{color: #0e6066;}
