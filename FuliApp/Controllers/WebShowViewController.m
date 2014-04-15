@@ -31,17 +31,13 @@
     for (UIView *view in [[[self.webView subviews] objectAtIndex:0] subviews]) {
         if ([view isKindOfClass:[UIImageView class]]) view.hidden = YES;
     }
-    
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"webbg"]];
     self.webView.backgroundColor = [UIColor clearColor];
     self.webView.opaque = NO;
-    
-   
 
     for (UIView *view in [[[self.webView subviews] objectAtIndex:0] subviews]) {
         if ([view isKindOfClass:[UIImageView class]]) view.hidden = YES;
     }
-    
     [self.webView setScalesPageToFit:YES];
 }
 
@@ -50,20 +46,14 @@
     NSURL *url = inRequest.URL;
     NSString *urlString = url.absoluteString;
     
-    
     NSLog(@"url %@", urlString);
     return YES;
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     [self.hud hide:YES];
-    
     self.title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-   
 }
-
-
-
 
 - (void)didReceiveMemoryWarning
 {

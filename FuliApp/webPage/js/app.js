@@ -27,4 +27,6 @@ $(function($) {
 		$hideFixBar.hide();
 		$showFixBar.show();
 	});
+
+	
 })

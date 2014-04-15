@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="fh">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script src="js/zepto.min.js"></script>
+	<title>富力科技园环境简介</title>
+</head>
+<body>
+	<div id="main" style="background-image:url(img/fuli3d.jpg)">
+		<div id="bottomBox" class="p31">
+			<div class="items">
+				<div id="showBottomBar">
+					<img src="img/ux_up.png" alt=""></div>
+				<div id="hideBottomBar" class="hide">
+					<img src="img/ux_down.png" alt=""></div>
+				<a class="item " href="p_3_1_1.html">
+					<div>怡人生态</div>
+					<div class="small">Pleasant ecological</div>
+				</a>
+				<a class="item " href="p_3_2_1.html">
+					<div>国际配套</div>
+					<div class="small">International facilities</div>
+				</a>
+			</div>
+		</div>
+		<script>
+$(function($) {
+	var $bottomBox = $('#bottomBox');
+	var $showBottomBar = $('#showBottomBar');
+	var $hideBottomBar = $('#hideBottomBar');
+	var offSetH = $bottomBox.height() - 24;
+
+	$bottomBox.css({
+		bottom: '-'+offSetH+'px'
+	});
+	$showBottomBar.on('click', function(e) {
+		$bottomBox.animate({
+		  bottom: '0'
+		}, 350, 'ease-out');
+		$showBottomBar.hide();
+		$hideBottomBar.show();
+	});
+	$hideBottomBar.on('click', function(e) {
+		$bottomBox.animate({
+		  bottom: '-'+offSetH+'px'
+		}, 350, 'ease-out');
+		$hideBottomBar.hide();
+		$showBottomBar.show();
+	});
+})
+</script>
+	</div>
+</body>
+</html>

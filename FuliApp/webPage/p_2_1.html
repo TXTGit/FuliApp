@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="fh">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script src="js/zepto.min.js"></script>
+	<title>卓越区位</title>
+</head>
+<body >
+	<div id="main">
+		<div class="imgBox">
+			<img src="img/p21.jpg" alt="" />
+		</div>
+
+		<div id="bottomBox">
+			<div id="showBottomBar">
+				<img src="img/ux_up.png" alt=""></div>
+			<div id="hideBottomBar" class="hide">
+				<img src="img/ux_down.png" alt=""></div>
+			<p>
+				富力地产汇集全球优势资源，专业打造富力科技园这一领创国际商务时代的大师作品。富力科技园同步于国际未来的办公方式，成为中大型企业购买资产，以备未来长远的发展战略。28万㎡超大规模总部基地，低至0.9容积率、高达45%绿化率，SWA园林设计缔造6大景观体系，媲美别墅式花园景观。下沉式商务会所，缔造圈层影响力。多维泊车体系，规划车行与人行动线，地下拥有430余个泊车位，商务往来自然畅达。科研办公以“幽”为主题，中心景观布置有集中的景观水面和大面积的绿地。每栋办公楼都设计有前庭后院，成为花园式办公别墅。
+			</p>
+		</div>
+
+<script>
+$(function($) {
+	
+	var $bottomBox = $('#bottomBox');
+	var $showBottomBar = $('#showBottomBar');
+	var $hideBottomBar = $('#hideBottomBar');
+	var offSetH = $bottomBox.height() - 24;
+
+	$bottomBox.css({
+		bottom: '-'+offSetH+'px'
+	});
+
+
+	$showBottomBar.on('click', function(e) {
+		$bottomBox.animate({
+		  bottom: '0'
+		}, 350, 'ease-out');
+		$showBottomBar.hide();
+		$hideBottomBar.show();
+	});
+	$hideBottomBar.on('click', function(e) {
+		$bottomBox.animate({
+		  bottom: '-'+offSetH+'px'
+		}, 350, 'ease-out');
+		$hideBottomBar.hide();
+		$showBottomBar.show();
+	});
+
+	
+})
+</script>
+	</div>
+</body>
+</html>
