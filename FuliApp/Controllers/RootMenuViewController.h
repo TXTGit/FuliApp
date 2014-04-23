@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "WithBackBtnViewController.h"
 
+
 @interface RootMenuViewController : WithBackBtnViewController
 
 @property (nonatomic, strong)IBOutlet UIButton * menuBtn2;
 
+@property (nonatomic, strong)IBOutlet UIView *menuView;
+
+
 -(IBAction)pushAction2:(id)sender;
+
 
 
 
