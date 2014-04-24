@@ -35,4 +35,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)telAct:(id)sender
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"拨打电话" message:@"您确定要拨打富力城电话吗?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [alert show];
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex==1){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://66687777"]];
+    }
+}
 @end

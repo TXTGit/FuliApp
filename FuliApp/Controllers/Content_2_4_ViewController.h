@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Content_2_4_ViewController : UIViewController
+@interface Content_2_4_ViewController : UIViewController<UIAlertViewDelegate>
+
+-(IBAction)telAct:(id)sender;
 
 @end

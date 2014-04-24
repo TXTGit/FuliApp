@@ -34,6 +34,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self setCenterViewAtIndex:0];
+    self.mm_drawerController.title = @"超越全球的规划设计";
 }
 
 - (IBAction)menu1Action:(id)sender

@@ -32,9 +32,17 @@
 {
     [super viewWillAppear:animated];
     
-     [self.navigationController setNavigationBarHidden:YES];
+     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    //[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     
-    
+}
+
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    //[[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)viewDidLoad
@@ -44,7 +52,7 @@
     
     self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"webbg"]];
     [self.navigationController setNavigationBarHidden:YES];
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    //[[UIApplication sharedApplication] setStatusBarHidden:YES];
 
     
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
@@ -56,7 +64,7 @@
     //intro page
     IntroViewController *introView = [self.storyboard instantiateViewControllerWithIdentifier:@"introViewController"];
     //[self presentViewController:introView animated:NO completion:nil];
-    [NSTimer scheduledTimerWithTimeInterval: 18.5
+    [NSTimer scheduledTimerWithTimeInterval: 13.4
                                      target: self
                                    selector: @selector(timerAct)
                                    userInfo: nil

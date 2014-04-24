@@ -59,6 +59,10 @@
 		A9A7A26419079C5D0086C232 /* zhihui3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A7A25E19079C5D0086C232 /* zhihui3@2x.jpg */; };
 		A9A7A26519079C5D0086C232 /* zhihui4_text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9A7A25F19079C5D0086C232 /* zhihui4_text@2x.png */; };
 		A9A7A26619079C5D0086C232 /* zhihui4@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A7A26019079C5D0086C232 /* zhihui4@2x.jpg */; };
+		A9A7A2691907BD4A0086C232 /* TrButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7A2681907BD4A0086C232 /* TrButton.m */; };
+		A9A7A26D1907CE9F0086C232 /* XppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7A26C1907CE9F0086C232 /* XppUtil.m */; };
+		A9A7A2711907D7A40086C232 /* telmap@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A7A2701907D7A40086C232 /* telmap@2x.jpg */; };
+		A9A7A2731907D8500086C232 /* tel_btn2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9A7A2721907D8500086C232 /* tel_btn2@2x.png */; };
 		A9B762991906104200046C52 /* tel_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9B762981906104200046C52 /* tel_btn@2x.png */; };
 		A9B7629D19063C0500046C52 /* index_banner@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9B7629B19063C0500046C52 /* index_banner@2x.jpg */; };
 		A9B7629E19063C0500046C52 /* index_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9B7629C19063C0500046C52 /* index_logo@2x.png */; };
@@ -163,6 +167,12 @@
 		A9A7A25E19079C5D0086C232 /* zhihui3@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zhihui3@2x.jpg"; sourceTree = "<group>"; };
 		A9A7A25F19079C5D0086C232 /* zhihui4_text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhihui4_text@2x.png"; sourceTree = "<group>"; };
 		A9A7A26019079C5D0086C232 /* zhihui4@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zhihui4@2x.jpg"; sourceTree = "<group>"; };
+		A9A7A2671907BD4A0086C232 /* TrButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrButton.h; sourceTree = "<group>"; };
+		A9A7A2681907BD4A0086C232 /* TrButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrButton.m; sourceTree = "<group>"; };
+		A9A7A26B1907CE9F0086C232 /* XppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XppUtil.h; sourceTree = "<group>"; };
+		A9A7A26C1907CE9F0086C232 /* XppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XppUtil.m; sourceTree = "<group>"; };
+		A9A7A2701907D7A40086C232 /* telmap@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "telmap@2x.jpg"; sourceTree = "<group>"; };
+		A9A7A2721907D8500086C232 /* tel_btn2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tel_btn2@2x.png"; sourceTree = "<group>"; };
 		A9B762981906104200046C52 /* tel_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tel_btn@2x.png"; sourceTree = "<group>"; };
 		A9B7629B19063C0500046C52 /* index_banner@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "index_banner@2x.jpg"; sourceTree = "<group>"; };
 		A9B7629C19063C0500046C52 /* index_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "index_logo@2x.png"; sourceTree = "<group>"; };
@@ -233,6 +243,10 @@
 				A92AD0B918ED378800F5795A /* MHCustomTabBarController */,
 				A9B762A219065BC400046C52 /* CirButton.h */,
 				A9B762A319065BC400046C52 /* CirButton.m */,
+				A9A7A2671907BD4A0086C232 /* TrButton.h */,
+				A9A7A2681907BD4A0086C232 /* TrButton.m */,
+				A9A7A26B1907CE9F0086C232 /* XppUtil.h */,
+				A9A7A26C1907CE9F0086C232 /* XppUtil.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -251,6 +265,8 @@
 		A92AD0C018ED3BC000F5795A /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				A9A7A2721907D8500086C232 /* tel_btn2@2x.png */,
+				A9A7A2701907D7A40086C232 /* telmap@2x.jpg */,
 				A9A7A25B19079C5D0086C232 /* zhihui2_text@2x.png */,
 				A9A7A25C19079C5D0086C232 /* zhihui2@2x.jpg */,
 				A9A7A25D19079C5D0086C232 /* zhihui3_text@2x.png */,
@@ -494,6 +510,7 @@
 				A97CC0C118F54FD700C36E01 /* FontAwesome.ttf in Resources */,
 				A9507CAA1904F0AF00016C2D /* intro1@2x.jpg in Resources */,
 				A91E7E1218F3DC75009DC4B4 /* webbg@2x.png in Resources */,
+				A9A7A2711907D7A40086C232 /* telmap@2x.jpg in Resources */,
 				A9B7629D19063C0500046C52 /* index_banner@2x.jpg in Resources */,
 				A9B7629E19063C0500046C52 /* index_logo@2x.png in Resources */,
 				A9507CAB1904F0AF00016C2D /* intro2@2x.jpg in Resources */,
@@ -504,6 +521,7 @@
 				A92AD0C218ED3BC000F5795A /* tarbgbar_on@2x.png in Resources */,
 				A9A7A26619079C5D0086C232 /* zhihui4@2x.jpg in Resources */,
 				A9A7A26119079C5D0086C232 /* zhihui2_text@2x.png in Resources */,
+				A9A7A2731907D8500086C232 /* tel_btn2@2x.png in Resources */,
 				A97CC0BA18F541E100C36E01 /* backBtn@2x.png in Resources */,
 				A9D73DE318ED0F4B0014BD47 /* Images.xcassets in Resources */,
 				A9D73DD518ED0F4B0014BD47 /* InfoPlist.strings in Resources */,
@@ -532,6 +550,7 @@
 				A92AD0BF18ED378800F5795A /* MHTabBarSegue.m in Sources */,
 				A97B63F218F7C58B0008F9F0 /* DCIntrospect.m in Sources */,
 				A965C11818F676F20019D2F9 /* Content_2C_ViewController.m in Sources */,
+				A9A7A26D1907CE9F0086C232 /* XppUtil.m in Sources */,
 				A92AD0BE18ED378800F5795A /* MHCustomTabBarController.m in Sources */,
 				A93BADF818F4F051005E3361 /* Content_1_2_1_1_ViewController.m in Sources */,
 				A91E7DFA18F3CFFB009DC4B4 /* WebShowViewController.m in Sources */,
@@ -549,6 +568,7 @@
 				A9D73DD718ED0F4B0014BD47 /* main.m in Sources */,
 				A9A7A2571907964E0086C232 /* Content_1_3_ViewController.m in Sources */,
 				A9507CAF1904F5DA00016C2D /* IntroViewController.m in Sources */,
+				A9A7A2691907BD4A0086C232 /* TrButton.m in Sources */,
 				A97CC0C418F5506500C36E01 /* NSString+FontAwesome.m in Sources */,
 				A965C10F18F648290019D2F9 /* Content_2R_ViewController.m in Sources */,
 				A9B762A419065BC400046C52 /* CirButton.m in Sources */,

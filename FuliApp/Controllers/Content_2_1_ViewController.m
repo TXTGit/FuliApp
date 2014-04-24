@@ -16,10 +16,11 @@
 
 
 
-- (void)viewDidLoad
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
+    [super viewWillAppear:animated];
     self.webStr = @"webPage/p_2_1.html";
+   
 
 }
 

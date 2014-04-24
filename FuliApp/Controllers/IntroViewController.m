@@ -34,27 +34,23 @@
     UIImageView *img2 = self.img2;
     UILabel *text1 = self.text1;
    
-    
     //[img1 setFrame:CGRectMake(0, 0, 542, 600)];
     [img1.layer setAnchorPoint:CGPointMake(0.5, 0.5)];
     [img2.layer setAnchorPoint:CGPointMake(0.5, 0.5)];
     [text1 setText:@"东区CBD鸟瞰生态环境图"];
     
-    [UIView animateWithDuration:7.0
+    [UIView animateWithDuration:4.8
                           delay:0
                         options:UIViewAnimationOptionCurveLinear animations:^{
-                            img1.transform = CGAffineTransformTranslate(img1.transform, -26, 0);
+                            img1.transform = CGAffineTransformTranslate(img1.transform, -28, 0);
                         }
                      completion:^(BOOL finished){
                          [text1 setText:@"整个花园办公场景图"];
                      }];
     
     
-    
- 
-    
-    [UIView animateWithDuration:3.8
-                          delay:4.5
+    [UIView animateWithDuration:2.6
+                          delay:2.2
                         options:UIViewAnimationOptionCurveLinear animations:^{
                             img1.alpha = 0;
                             
@@ -62,11 +58,11 @@
                      completion:nil];
 
     //
-    [UIView animateWithDuration:8.5
-                          delay:4.8
+    [UIView animateWithDuration:6.6
+                          delay:2.3
                         options:UIViewAnimationOptionCurveLinear animations:^{
                             
-                            img2.transform = CGAffineTransformScale(img2.transform, 1.1, 1.1);
+                            img2.transform = CGAffineTransformScale(img2.transform, 1.13, 1.13);
                             
                         }
                      completion:^(BOOL finished){
@@ -76,7 +72,7 @@
    
 
     [UIView animateWithDuration:2.4
-                          delay:13
+                          delay:7.7
                         options:UIViewAnimationOptionCurveLinear animations:^{
                             img2.alpha = 0;
                         }
@@ -95,18 +91,17 @@
 }
 
 -(IBAction)telAct:(id)sender{
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://66687777"]];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"拨打电话" message:@"您确定要拨打富力城电话吗?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [alert show];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if(buttonIndex==1){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://66687777"]];
+    }
 }
-*/
+
 
 @end

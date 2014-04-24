@@ -39,11 +39,7 @@ NSString *const MHCustomTabBarControllerViewControllerAlreadyVisibleNotification
     
       
 }
--(void) viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-}
+
 
 -(void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
@@ -99,7 +95,6 @@ NSString *const MHCustomTabBarControllerViewControllerAlreadyVisibleNotification
         [[NSNotificationCenter defaultCenter] postNotificationName:MHCustomTabBarControllerViewControllerAlreadyVisibleNotification object:nil];
         return NO;
     }
-    
     return YES;
 }
 

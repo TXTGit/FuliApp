@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-461" y="752"/>
+            <point key="canvasLocation" x="-425" y="-470"/>
         </scene>
         <!--Custom Tab Bar Controller - 东方硅谷三智麒麟-->
         <scene sceneID="S7V-ai-SYe">
@@ -330,26 +330,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWH-PV-dGt">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfR-3C-loi" customClass="CirButton">
-                                        <rect key="frame" x="63" y="325" width="80" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.078431372550000003" green="0.57647058819999997" blue="0.58823529409999997" alpha="0.5" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="科技城详情">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="oDX-bX-rVA" kind="push" id="8Gz-N8-GlG"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerY" secondItem="vfR-3C-loi" secondAttribute="centerY" constant="-125" id="o6C-mz-kvV"/>
-                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfR-3C-loi" customClass="CirButton">
+                                <rect key="frame" x="58" y="315" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.57647058819999997" blue="0.58823529409999997" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="科技城详情">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oDX-bX-rVA" kind="push" id="8Gz-N8-GlG"/>
+                                </connections>
+                            </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="zhihui3_text.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zax-9n-9po">
                                 <rect key="frame" x="95" y="35" width="220" height="62"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -361,6 +356,7 @@
                             <constraint firstAttribute="trailing" secondItem="XWH-PV-dGt" secondAttribute="trailing" id="3d2-yO-CkJ"/>
                             <constraint firstItem="XWH-PV-dGt" firstAttribute="leading" secondItem="gG0-aE-4Ju" secondAttribute="leading" id="CjK-ma-GZt"/>
                             <constraint firstAttribute="trailing" secondItem="Zax-9n-9po" secondAttribute="trailing" constant="5" id="LiY-dP-PO4"/>
+                            <constraint firstAttribute="centerY" secondItem="vfR-3C-loi" secondAttribute="centerY" constant="-115" id="T3x-Aw-MdQ"/>
                             <constraint firstItem="XWH-PV-dGt" firstAttribute="top" secondItem="gG0-aE-4Ju" secondAttribute="top" id="bJn-ZC-INP"/>
                             <constraint firstItem="Zax-9n-9po" firstAttribute="top" secondItem="xaQ-HT-OzK" secondAttribute="bottom" constant="15" id="eAu-m3-J0c"/>
                         </constraints>
@@ -488,10 +484,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wHo-wu-QQy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIb-PI-Bum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="778"/>
+            <point key="canvasLocation" x="669" y="690"/>
         </scene>
         <!--Content21 View Controller-->
         <scene sceneID="ffl-HY-tS6">
@@ -505,16 +502,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suD-Un-2jo">
-                                <rect key="frame" x="119" y="183" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGs-aB-tGD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dGs-aB-tGD" firstAttribute="top" secondItem="Esx-Zk-64o" secondAttribute="top" id="1zt-xl-p6p"/>
+                            <constraint firstItem="dGs-aB-tGD" firstAttribute="leading" secondItem="Esx-Zk-64o" secondAttribute="leading" id="NTo-ww-8Ym"/>
+                            <constraint firstAttribute="trailing" secondItem="dGs-aB-tGD" secondAttribute="trailing" id="Z7f-YP-c1A"/>
+                            <constraint firstItem="3lX-GK-UOr" firstAttribute="top" secondItem="dGs-aB-tGD" secondAttribute="bottom" id="dek-rq-21A"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="dGs-aB-tGD" id="uru-Vp-Rey"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WhY-ou-EWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -532,25 +536,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjN-F2-SPr">
-                                <rect key="frame" x="12" y="20" width="148" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjN-F2-SPr" customClass="TrButton">
+                                <rect key="frame" x="12" y="20" width="148" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.792156862745098" green="0.792156862745098" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-21" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="道路交通">
-                                    <color key="titleColor" red="0.058823529411764705" green="0.37254901960784315" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.23722787919999999" green="0.23542837080000001" blue="0.2350918773" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.37254901959999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.37254901959999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="tab1Action:" destination="AgO-hh-Xqc" eventType="touchUpInside" id="kc8-Qr-2tw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgm-bJ-XaH">
-                                <rect key="frame" x="160" y="20" width="148" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgm-bJ-XaH" customClass="TrButton">
+                                <rect key="frame" x="160" y="20" width="148" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.79215686269999996" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-21" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="轨道交通">
-                                    <color key="titleColor" red="0.058823529409999999" green="0.37254901959999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.23722787919999999" green="0.23542837080000001" blue="0.2350918773" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.37254901959999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.37254901959999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="tab2Action:" destination="AgO-hh-Xqc" eventType="touchUpInside" id="Ixu-y6-fpV"/>
@@ -563,6 +583,10 @@
                             <constraint firstItem="HjN-F2-SPr" firstAttribute="top" secondItem="saC-ub-hNW" secondAttribute="bottom" constant="12" id="deh-WP-XAh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn1" destination="HjN-F2-SPr" id="Unh-3i-7kf"/>
+                        <outlet property="btn2" destination="Mgm-bJ-XaH" id="aZ4-fk-pSh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2a-oy-b2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -641,7 +665,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMq-LL-NL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="347" y="778"/>
+            <point key="canvasLocation" x="399" y="1318"/>
         </scene>
         <!--Content1221 View Controller-->
         <scene sceneID="gHH-TI-4We">
@@ -709,7 +733,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="东方硅谷三智麒麟">
-                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <state key="highlighted">
@@ -723,14 +747,14 @@
                                                 <rect key="frame" x="0.0" y="28" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
-                                                <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jy8-Uh-Pw2">
                                                 <rect key="frame" x="0.0" y="50" width="320" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="富力科技园介绍">
-                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -741,14 +765,14 @@
                                                 <rect key="frame" x="0.0" y="77" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKg-A1-QFZ">
                                                 <rect key="frame" x="0.0" y="100" width="320" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="富力科技园环境简介">
-                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
@@ -756,14 +780,14 @@
                                                 <rect key="frame" x="0.0" y="128" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbL-uj-oAQ">
                                                 <rect key="frame" x="0.0" y="150" width="320" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="富力科技园服务">
-                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
@@ -771,14 +795,14 @@
                                                 <rect key="frame" x="0.0" y="177" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ak3-a2-TnH">
                                                 <rect key="frame" x="0.0" y="200" width="320" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="便捷商务">
-                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
@@ -786,7 +810,7 @@
                                                 <rect key="frame" x="0.0" y="226" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -931,7 +955,29 @@
                     <view key="view" contentMode="scaleToFill" id="gc3-Zs-sp3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="telmap.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mHo-0T-A9q">
+                                <rect key="frame" x="0.0" y="-56" width="320" height="550"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D59-4q-4uT">
+                                <rect key="frame" x="65" y="418" width="191" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="tel_btn2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="telAct:" destination="klu-LP-Qk9" eventType="touchUpInside" id="WrY-BM-Ezs"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WNH-pU-Qdc" firstAttribute="top" secondItem="D59-4q-4uT" secondAttribute="bottom" constant="29" id="4WO-Tz-rcq"/>
+                            <constraint firstAttribute="centerX" secondItem="mHo-0T-A9q" secondAttribute="centerX" id="vQF-qZ-zbj"/>
+                            <constraint firstAttribute="centerX" secondItem="D59-4q-4uT" secondAttribute="centerX" id="ww3-KB-rNm"/>
+                            <constraint firstAttribute="bottom" secondItem="mHo-0T-A9q" secondAttribute="bottom" constant="-14" id="yUI-OZ-b5g"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OB6-D6-rSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -949,6 +995,8 @@
         <image name="tarbgbar.png" width="80" height="58"/>
         <image name="tarbgbar_on.png" width="80" height="58"/>
         <image name="tel_btn.png" width="193" height="33"/>
+        <image name="tel_btn2.png" width="191" height="33"/>
+        <image name="telmap.jpg" width="320" height="550"/>
         <image name="zhihui2_text.png" width="270" height="33"/>
         <image name="zhihui3_text.png" width="220" height="62"/>
         <image name="zhihui4_text.png" width="275" height="68"/>

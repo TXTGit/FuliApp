@@ -7,6 +7,8 @@
 //
 
 #import "Content_2_2_ViewController.h"
+#import "TrButton.h"
+#import "XppUtil.h"
 
 @interface Content_2_2_ViewController ()
 
@@ -15,6 +17,11 @@
 @property (nonatomic, retain) UIImageView *imageView;
 -(IBAction)tab1Action:(id)sender;
 -(IBAction)tab2Action:(id)sender;
+
+@property (nonatomic, strong) IBOutlet TrButton *btn1;
+
+
+@property (nonatomic, strong) IBOutlet TrButton *btn2;
 
 @end
 
@@ -58,6 +65,14 @@
     [[self view] addSubview:scrollView];
     self.scrollView = scrollView;
     self.imageView = imageView;
+
+    [self.btn1 setBackgroundImage:[XppUtil imageWithColor:Rgb2UIColor(202, 202, 202)] forState:UIControlStateNormal];
+    [self.btn1 setBackgroundImage:[XppUtil imageWithColor:[UIColor whiteColor]] forState: UIControlStateSelected];
+    
+    [self.btn2 setBackgroundImage:[XppUtil imageWithColor:Rgb2UIColor(202, 202, 202)] forState:UIControlStateNormal];
+    [self.btn2 setBackgroundImage:[XppUtil imageWithColor:[UIColor whiteColor]] forState: UIControlStateSelected];
+
+    [self.btn1 setSelected:YES];
 }
 
 - (void)finishCropping {
@@ -77,14 +92,29 @@
 	return self.imageView;
 }
 
+-(void)setBtn1on
+{
+    
+    [self.btn1 setSelected:YES];
+    [self.btn2 setSelected:NO];
+}
+-(void)setBtn2on
+{
+    
+    [self.btn2 setSelected:YES];
+    [self.btn1 setSelected:NO];
+}
+
 -(IBAction)tab1Action:(id)sender
 {
     [self.imageView setImage:[UIImage imageNamed:@"daolu.jpg"]];
+    [self setBtn1on];
 }
 
 -(IBAction)tab2Action:(id)sender
 {
     [self.imageView setImage:[UIImage imageNamed:@"guidao.jpg"]];
+    [self setBtn2on];
 }
 
 - (void)didReceiveMemoryWarning

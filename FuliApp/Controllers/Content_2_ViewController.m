@@ -32,6 +32,7 @@
 	
     [self setupRightMenuButton];
     [self setupBackButton];
+   
 }
 
 -(void)setupRightMenuButton{

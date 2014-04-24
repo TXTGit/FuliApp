@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IntroViewController : UIViewController
+@interface IntroViewController : UIViewController<UIAlertViewDelegate>
 
 @property(nonatomic,strong)IBOutlet UIImageView *img1;
 @property(nonatomic,strong)IBOutlet UIImageView *img2;

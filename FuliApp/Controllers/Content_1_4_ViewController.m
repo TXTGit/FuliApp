@@ -28,8 +28,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
     CALayer *imgLayer = [CALayer layer];
     imgLayer.contents = (id)[[UIImage imageNamed:@"zhihui4.jpg"] CGImage];
     [imgLayer setFrame:CGRectMake(0, -140, 944, 550)];
@@ -38,9 +36,7 @@
     }
     [self.conView.layer addSublayer:imgLayer];
     self.imgLayer = imgLayer;
-    
-    
-    
+
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -51,20 +47,19 @@
     ani1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     ani1.fromValue = [NSNumber numberWithInt:0];
     ani1.toValue = [NSNumber numberWithInt:-624];
-    ani1.duration = 80;
+    ani1.duration = 90;
     
     CABasicAnimation *ani2= [CABasicAnimation animationWithKeyPath:@"transform.translation.x"];
     ani2.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     ani2.fromValue = [NSNumber numberWithInt:-624];
     ani2.toValue = [NSNumber numberWithInt:0];
-    ani2.duration = 80;
-    
+    ani2.duration = 90;
     
     
     CAAnimationGroup *group = [CAAnimationGroup animation];
     group.animations = [NSArray arrayWithObjects:ani1, ani2, nil];
     group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    group.duration = 80;
+    group.duration = 90;
     group.autoreverses = YES;
     group.repeatCount = 999;
     group.fillMode = kCAFillModeForwards;
@@ -76,18 +71,8 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
