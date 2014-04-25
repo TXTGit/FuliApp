@@ -27,9 +27,6 @@
                                 <state key="normal" title=" " backgroundImage="tel_btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="telAct:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BfY-Pw-y73"/>
-                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" image="intro2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iU3-et-dfm">
                                 <rect key="frame" x="-148" y="0.0" width="617" height="600"/>
@@ -49,7 +46,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iU3-et-dfm" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="-20" id="317-9X-cna"/>
+                            <constraint firstItem="iU3-et-dfm" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="-50" id="317-9X-cna"/>
                             <constraint firstAttribute="centerY" secondItem="SiP-9A-aEM" secondAttribute="centerY" id="7Um-7G-b0A"/>
                             <constraint firstAttribute="centerX" secondItem="SiP-9A-aEM" secondAttribute="centerX" id="a83-Ot-p6R"/>
                             <constraint firstItem="Fxp-vF-2Ue" firstAttribute="top" secondItem="2KU-Kb-BZv" secondAttribute="bottom" constant="12" id="c0P-Ol-IVj"/>
@@ -708,53 +705,52 @@
                                 <rect key="frame" x="0.0" y="-89" width="320" height="569"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-vh-K9H">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-vh-K9H">
                                 <rect key="frame" x="0.0" y="0.0" width="120" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.5607843137254902" blue="0.63137254901960782" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="ddbar_m1.png">
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="ddbar_m1_on.png"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="dddbar_m1.png"/>
+                                <state key="selected" image="dddbar_m1.png" backgroundImage="dddbar_on.png"/>
                                 <connections>
                                     <action selector="menu1Action:" destination="EGC-hu-dr0" eventType="touchUpInside" id="bmW-HQ-if1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21d-vd-ltt">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21d-vd-ltt">
                                 <rect key="frame" x="0.0" y="80" width="120" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.63137254899999995" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="ddbar_m2.png">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="dddbar_m2.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="ddbar_m2_on.png"/>
+                                <state key="selected" image="dddbar_m2.png" backgroundImage="dddbar_on.png"/>
                                 <connections>
                                     <action selector="menu2Action:" destination="EGC-hu-dr0" eventType="touchUpInside" id="qFg-1R-e2k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shW-39-3H4">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shW-39-3H4">
                                 <rect key="frame" x="0.0" y="160" width="120" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.63137254899999995" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="ddbar_m3.png">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="dddbar_m3.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="ddbar_m3_on.png"/>
+                                <state key="selected" image="dddbar_m3.png" backgroundImage="dddbar_on.png"/>
                                 <connections>
                                     <action selector="menu3Action:" destination="EGC-hu-dr0" eventType="touchUpInside" id="XIH-aq-GGb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AS8-Dl-XNm">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AS8-Dl-XNm">
                                 <rect key="frame" x="0.0" y="240" width="120" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.63137254899999995" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="ddbar_m4.png">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="dddbar_m4.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="ddbar_m4_on.png"/>
+                                <state key="selected" image="dddbar_m4.png" backgroundImage="dddbar_on.png"/>
                                 <connections>
                                     <action selector="menu4Action:" destination="EGC-hu-dr0" eventType="touchUpInside" id="sio-27-OsX"/>
                                 </connections>
@@ -765,6 +761,12 @@
                             <constraint firstItem="BrY-D7-uOK" firstAttribute="top" secondItem="jjY-TI-tyT" secondAttribute="bottom" id="LDZ-1G-Yo3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="menu1btn" destination="pFe-vh-K9H" id="NHH-J8-E4S"/>
+                        <outlet property="menu2btn" destination="21d-vd-ltt" id="hG7-Ln-gFL"/>
+                        <outlet property="menu3btn" destination="shW-39-3H4" id="oHk-Xc-XJ1"/>
+                        <outlet property="menu4btn" destination="AS8-Dl-XNm" id="m3z-jM-QZN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMq-LL-NL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -832,91 +834,113 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ean-bR-bxv">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ean-bR-bxv">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-9" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="东方硅谷三智麒麟">
                                                     <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <state key="highlighted">
-                                                    <color key="titleShadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                <state key="highlighted" backgroundImage="rootmenu_hi.png">
+                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="e7d-QA-DPL" kind="push" id="lHQ-Ha-l8b"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The east valley three kirin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKj-vk-N6N">
-                                                <rect key="frame" x="0.0" y="28" width="320" height="21"/>
+                                                <rect key="frame" x="0.0" y="22" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
                                                 <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jy8-Uh-Pw2">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jy8-Uh-Pw2">
                                                 <rect key="frame" x="0.0" y="50" width="320" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-9" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="富力科技园介绍">
                                                     <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" backgroundImage="rootmenu_hi.png">
+                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="pushAction2:" destination="ctr-bR-NWx" eventType="touchUpInside" id="SLB-q7-hcO"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fuli technology park introduced" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oET-1q-GPr">
-                                                <rect key="frame" x="0.0" y="77" width="320" height="21"/>
+                                                <rect key="frame" x="0.0" y="71" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKg-A1-QFZ">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKg-A1-QFZ">
                                                 <rect key="frame" x="0.0" y="100" width="320" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-9" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="富力科技园环境简介">
                                                     <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" backgroundImage="rootmenu_hi.png">
+                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="2EH-OD-DGM" kind="push" id="y8O-0L-JrC"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fuli technology park Environment introduction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8S-Xx-HHJ">
-                                                <rect key="frame" x="0.0" y="128" width="320" height="21"/>
+                                                <rect key="frame" x="0.0" y="122" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbL-uj-oAQ">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbL-uj-oAQ">
                                                 <rect key="frame" x="0.0" y="150" width="320" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-9" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="富力科技园服务">
                                                     <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <state key="highlighted" backgroundImage="rootmenu_hi.png">
+                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
+                                                </state>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fuli technology park service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg9-df-GTW">
-                                                <rect key="frame" x="0.0" y="177" width="320" height="21"/>
+                                                <rect key="frame" x="0.0" y="172" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ak3-a2-TnH">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ak3-a2-TnH">
                                                 <rect key="frame" x="0.0" y="200" width="320" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-9" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="便捷商务">
                                                     <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" backgroundImage="rootmenu_hi.png">
+                                                    <color key="titleColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="SCC-Oc-ROv" kind="push" id="Pd7-wi-SQT"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convenient service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npC-By-gmh">
-                                                <rect key="frame" x="0.0" y="226" width="320" height="21"/>
+                                                <rect key="frame" x="0.0" y="221" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <color key="textColor" red="0.054901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
@@ -929,7 +953,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="nzp-Fy-znh" secondAttribute="centerX" id="Yho-HM-rNh"/>
-                                    <constraint firstAttribute="centerY" secondItem="nzp-Fy-znh" secondAttribute="centerY" id="rXi-qV-87b"/>
+                                    <constraint firstAttribute="centerY" secondItem="nzp-Fy-znh" secondAttribute="centerY" constant="-6" id="rXi-qV-87b"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -981,9 +1005,10 @@
                                     <segue destination="Xyw-Xb-Z8K" kind="push" id="c9A-I0-3zE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQw-Mm-Why">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQw-Mm-Why">
                                 <rect key="frame" x="125" y="66" width="70" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="74" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="商务咨询" backgroundImage="business_btn1.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1039,13 +1064,13 @@
         <scene sceneID="L9Q-9N-t9d">
             <objects>
                 <navigationController definesPresentationContext="YES" id="hGS-OS-HpH" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="ct1-iB-eWk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" id="ct1-iB-eWk">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.078431372550000003" green="0.57647058819999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="textShadowColor" white="0.84810978459999997" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -1155,10 +1180,10 @@
                                 <rect key="frame" x="0.0" y="-56" width="320" height="550"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D59-4q-4uT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D59-4q-4uT">
                                 <rect key="frame" x="65" y="418" width="191" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="tel_btn2.png">
+                                <state key="normal" image="tel_btn2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1440,14 +1465,11 @@
         <image name="business_btn1.png" width="70" height="90"/>
         <image name="business_btn2.png" width="70" height="90"/>
         <image name="business_btn3.png" width="70" height="90"/>
-        <image name="ddbar_m1.png" width="120" height="72"/>
-        <image name="ddbar_m1_on.png" width="120" height="72"/>
-        <image name="ddbar_m2.png" width="120" height="72"/>
-        <image name="ddbar_m2_on.png" width="120" height="72"/>
-        <image name="ddbar_m3.png" width="120" height="72"/>
-        <image name="ddbar_m3_on.png" width="120" height="72"/>
-        <image name="ddbar_m4.png" width="120" height="72"/>
-        <image name="ddbar_m4_on.png" width="120" height="72"/>
+        <image name="dddbar_m1.png" width="120" height="72"/>
+        <image name="dddbar_m2.png" width="120" height="72"/>
+        <image name="dddbar_m3.png" width="120" height="72"/>
+        <image name="dddbar_m4.png" width="120" height="72"/>
+        <image name="dddbar_on.png" width="120" height="72"/>
         <image name="fuli3dindex.jpg" width="320" height="569"/>
         <image name="index_banner.jpg" width="320" height="223"/>
         <image name="index_logo.png" width="90" height="56"/>
@@ -1457,6 +1479,7 @@
         <image name="lrbg.png" width="320" height="569"/>
         <image name="neibupeitao.png" width="160" height="57"/>
         <image name="neibupeitao_on.png" width="160" height="57"/>
+        <image name="rootmenu_hi.png" width="320" height="50"/>
         <image name="tarbgbar.png" width="80" height="58"/>
         <image name="tarbgbar_on.png" width="80" height="58"/>
         <image name="tel_btn.png" width="193" height="33"/>

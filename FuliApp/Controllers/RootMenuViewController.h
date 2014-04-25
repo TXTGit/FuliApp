@@ -10,7 +10,7 @@
 #import "WithBackBtnViewController.h"
 
 
-@interface RootMenuViewController : WithBackBtnViewController
+@interface RootMenuViewController : UIViewController<UIAlertViewDelegate>
 
 @property (nonatomic, strong)IBOutlet UIButton * menuBtn2;
 

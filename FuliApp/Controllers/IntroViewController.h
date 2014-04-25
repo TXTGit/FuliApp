@@ -12,10 +12,11 @@
 
 @property(nonatomic,strong)IBOutlet UIImageView *img1;
 @property(nonatomic,strong)IBOutlet UIImageView *img2;
+@property(nonatomic, strong)IBOutlet UIButton *telBtn;
 
 @property(nonatomic,strong)IBOutlet UILabel *text1;
 
--(IBAction)telAct:(id)sender;
+
 
 
 @end

@@ -10,6 +10,9 @@
 #import "RootMenuViewController.h"
 
 @interface IntroViewController ()
+{
+    NSTimer *myTimer;
+}
 
 @end
 
@@ -32,21 +35,21 @@
     
     UIImageView *img1 = self.img1;
     UIImageView *img2 = self.img2;
-    UILabel *text1 = self.text1;
+    
    
     //[img1 setFrame:CGRectMake(0, 0, 542, 600)];
     [img1.layer setAnchorPoint:CGPointMake(0.5, 0.5)];
     [img2.layer setAnchorPoint:CGPointMake(0.5, 0.5)];
-    [text1 setText:@"东区CBD鸟瞰生态环境图"];
+    [self.text1 setText:@"东区CBD鸟瞰生态环境图"];
+    myTimer = [NSTimer scheduledTimerWithTimeInterval:3.1 target:self selector:@selector(changeText) userInfo:nil repeats:NO];
+    
     
     [UIView animateWithDuration:4.8
                           delay:0
                         options:UIViewAnimationOptionCurveLinear animations:^{
                             img1.transform = CGAffineTransformTranslate(img1.transform, -28, 0);
                         }
-                     completion:^(BOOL finished){
-                         [text1 setText:@"整个花园办公场景图"];
-                     }];
+                     completion:nil];
     
     
     [UIView animateWithDuration:2.6
@@ -66,7 +69,7 @@
                             
                         }
                      completion:^(BOOL finished){
-                         [text1 setHidden:YES];
+                         [self.text1 setHidden:YES];
                      }];
 
    
@@ -81,6 +84,11 @@
     //
    
 }
+-(void) changeText
+{
+    [self.text1 setText:@"整个花园办公场景图"];
+    [myTimer setFireDate:[NSDate distantFuture]];
+}
 
 
 - (void)didReceiveMemoryWarning
@@ -90,18 +98,7 @@
     
 }
 
--(IBAction)telAct:(id)sender{
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"拨打电话" message:@"您确定要拨打富力城电话吗?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-    [alert show];
-    
-}
 
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if(buttonIndex==1){
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://66687777"]];
-    }
-}
 
 
 @end

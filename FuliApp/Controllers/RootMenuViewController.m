@@ -32,16 +32,14 @@
 {
     [super viewWillAppear:animated];
     
-     [self.navigationController setNavigationBarHidden:YES animated:YES];
-    //[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
-    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    //self.navigationController.navigationBar.alpha = 0.01;
 }
 
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    //[[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
@@ -51,9 +49,7 @@
 	// intUI
     
     self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"webbg"]];
-    [self.navigationController setNavigationBarHidden:YES];
-    //[[UIApplication sharedApplication] setStatusBarHidden:YES];
-
+    //[self.navigationController setNavigationBarHidden:YES];
     
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
         // iOS 7
@@ -64,13 +60,27 @@
     //intro page
     IntroViewController *introView = [self.storyboard instantiateViewControllerWithIdentifier:@"introViewController"];
     [self presentViewController:introView animated:NO completion:nil];
-    [NSTimer scheduledTimerWithTimeInterval: 13.4
+    [NSTimer scheduledTimerWithTimeInterval: 13.0
                                      target: self
                                    selector: @selector(timerAct)
                                    userInfo: nil
                                     repeats: NO];
+   
+    [introView.telBtn addTarget:self action:@selector(telAction) forControlEvents:UIControlEventTouchUpInside];
+}
+-(void)telAction
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"拨打电话" message:@"您确定要拨打富力城电话吗?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [alert show];
 }
 
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex==1){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://66687777"]];
+    }
+}
 
 - (BOOL)prefersStatusBarHidden
 {

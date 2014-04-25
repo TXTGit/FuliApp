@@ -71,6 +71,29 @@
     Content_2_4_ViewController *contentView4 = [self.storyboard instantiateViewControllerWithIdentifier:@"Content_2_4"];
     [CenterViews addObject:contentView4];
     
+    [self.menu1btn setSelected:NO];
+    [self.menu2btn setSelected:NO];
+    [self.menu3btn setSelected:NO];
+    [self.menu4btn setSelected:NO];
+    
+    switch (index) {
+        case 0:
+            [self.menu1btn setSelected:YES];
+            break;
+        case 1:
+            [self.menu2btn setSelected:YES];
+            break;
+        case 2:
+            [self.menu3btn setSelected:YES];
+            break;
+        case 3:
+            [self.menu4btn setSelected:YES];
+            break;
+            
+    }
+    
+    
+    
     [self.mm_drawerController setCenterViewController:[CenterViews objectAtIndex:index]
                                    withCloseAnimation:YES completion:nil];
     

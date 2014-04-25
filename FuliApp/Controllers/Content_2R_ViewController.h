@@ -10,9 +10,17 @@
 
 @interface Content_2R_ViewController : UIViewController
 
+
+@property (nonatomic,strong)IBOutlet UIButton *menu1btn;
+@property (nonatomic,strong)IBOutlet UIButton *menu2btn;
+@property (nonatomic,strong)IBOutlet UIButton *menu3btn;
+@property (nonatomic,strong)IBOutlet UIButton *menu4btn;
+
 - (IBAction)menu1Action:(id)sender;
 - (IBAction)menu2Action:(id)sender;
 - (IBAction)menu3Action:(id)sender;
 - (IBAction)menu4Action:(id)sender;
+
+
 
 @end

@@ -42,7 +42,14 @@
     [self.webView setScalesPageToFit:YES];
     
 
+    self.webView.delegate = self;
     
+    
+    HUD = [[MBProgressHUD alloc] initWithView:self.view];
+	[self.navigationController.view addSubview:HUD];
+	HUD.labelText = @"请稍等...";
+	
+	HUD.delegate = self;
    
 }
 
@@ -69,16 +76,14 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    self.webView.delegate = self;
 
-    
-    HUD = [[MBProgressHUD alloc] initWithView:self.view];
-	[self.navigationController.view addSubview:HUD];
-	HUD.labelText = @"请稍等...";
-	
-	HUD.delegate = self;
-	[HUD show:YES];
+	NSLog(@"webshowview viewWillAppear");
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [HUD show:YES];
     
     
     //不包含http头的从本地文件打开
@@ -92,6 +97,14 @@
     }
     [self.webView loadRequest:request];
 
+    NSLog(@"webshowview viewDidAppear");
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [HUD hide:YES];
 }
 
 @end
