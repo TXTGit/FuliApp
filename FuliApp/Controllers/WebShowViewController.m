@@ -8,6 +8,7 @@
 
 #import "WebShowViewController.h"
 
+
 @interface WebShowViewController ()
 
 @end
@@ -39,7 +40,12 @@
         if ([view isKindOfClass:[UIImageView class]]) view.hidden = YES;
     }
     [self.webView setScalesPageToFit:YES];
+    
+
+    
+   
 }
+
 
 
 -(BOOL) webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {
@@ -51,7 +57,7 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
-    [self.hud hide:YES];
+    [HUD hide:YES];
     self.title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
 }
 
@@ -65,15 +71,27 @@
     [super viewWillAppear:animated];
     
     self.webView.delegate = self;
-    self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    self.hud.mode = MBProgressHUDModeAnnularDeterminate;
-    self.hud.labelText = @"Loading";
-    [self.hud hide:NO];
+
+    
+    HUD = [[MBProgressHUD alloc] initWithView:self.view];
+	[self.navigationController.view addSubview:HUD];
+	HUD.labelText = @"请稍等...";
+	
+	HUD.delegate = self;
+	[HUD show:YES];
     
     
-    NSString *htmlPath = [[[NSBundle mainBundle] bundlePath]stringByAppendingPathComponent:self.webStr];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:htmlPath]]];
-    
-    
+    //不包含http头的从本地文件打开
+    NSURLRequest *request = nil;
+    if ([self.webStr hasPrefix:@"http"]) {
+        NSURL *url=[NSURL URLWithString:self.webStr];
+        request=[NSURLRequest requestWithURL:url];
+    }else{
+        NSString *htmlPath = [[[NSBundle mainBundle] bundlePath]stringByAppendingPathComponent:self.webStr];
+        request=[NSURLRequest requestWithURL:[NSURL fileURLWithPath:htmlPath]];
+    }
+    [self.webView loadRequest:request];
+
 }
+
 @end

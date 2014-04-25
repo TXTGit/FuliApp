@@ -48,18 +48,18 @@
     ani1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     ani1.fromValue = [NSNumber numberWithInt:0];
     ani1.toValue = [NSNumber numberWithInt:-540];
-    ani1.duration = 90;
+    ani1.duration = 80;
     
     CABasicAnimation *ani2= [CABasicAnimation animationWithKeyPath:@"transform.translation.x"];
     ani2.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     ani2.fromValue = [NSNumber numberWithInt:-540];
     ani2.toValue = [NSNumber numberWithInt:0];
-    ani2.duration = 90;
+    ani2.duration = 80;
    
     CAAnimationGroup *group = [CAAnimationGroup animation];
     group.animations = [NSArray arrayWithObjects:ani1, ani2, nil];
     group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    group.duration = 90;
+    group.duration = 80;
     group.autoreverses = YES;
     group.repeatCount = 999;
     group.fillMode = kCAFillModeForwards;

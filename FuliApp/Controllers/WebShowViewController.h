@@ -11,11 +11,13 @@
 
 #import "MBProgressHUD.h"
 
-@interface WebShowViewController : WithBackBtnViewController<UIWebViewDelegate>
+@interface WebShowViewController : WithBackBtnViewController<UIWebViewDelegate,MBProgressHUDDelegate>
+{
+   MBProgressHUD *HUD;
+}
+
 
 @property(nonatomic, strong)IBOutlet UIWebView *webView;
 @property(nonatomic, strong)NSString *webStr;
-
-@property(nonatomic, strong)MBProgressHUD *hud;
 
 @end

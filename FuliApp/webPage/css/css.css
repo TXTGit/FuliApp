@@ -43,7 +43,7 @@ vertical-align: middle;border: 0;
 #showFixBar,#hideFixBar{ padding: 0 0 0 4px; }
 #showFixBar>img,#hideFixBar>img{ width: 10px; }
 #fixBar>.fr{ padding: 0 6px 0 4px; }
-#fixBar>.fr>.item{ color: #eee; display: block; padding: 7px 10px; border-bottom: 1px solid #fff; }
+#fixBar>.fr>.item{ color: #e0e0e0; display: block; padding: 7px 10px; border-bottom: 1px solid #fff; }
 #fixBar>.fr>.item.small{ padding: 7px 8px; font-size: 12px; }
 #fixBar>.fr>.item.least{ padding: 7px 0px; -webkit-text-size-adjust:none; font-size: 10px; }
 #fixBar>.fr>.item:last-child{ border-bottom:none; }

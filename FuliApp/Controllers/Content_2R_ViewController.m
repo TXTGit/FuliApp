@@ -73,6 +73,7 @@
     
     [self.mm_drawerController setCenterViewController:[CenterViews objectAtIndex:index]
                                    withCloseAnimation:YES completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -63,7 +63,7 @@
     
     //intro page
     IntroViewController *introView = [self.storyboard instantiateViewControllerWithIdentifier:@"introViewController"];
-    //[self presentViewController:introView animated:NO completion:nil];
+    [self presentViewController:introView animated:NO completion:nil];
     [NSTimer scheduledTimerWithTimeInterval: 13.4
                                      target: self
                                    selector: @selector(timerAct)
@@ -79,7 +79,7 @@
 
 - (void)timerAct
 {
-    //[self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
