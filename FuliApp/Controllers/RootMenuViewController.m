@@ -12,8 +12,12 @@
 #import "Content_2R_ViewController.h"
 #import "IntroViewController.h"
 #import "MMDrawerController.h"
+#import "MBProgressHUD.h"
 
 @interface RootMenuViewController ()
+{
+    MBProgressHUD *HUD;
+}
 
 @end
 
@@ -47,15 +51,25 @@
 {
     [super viewDidLoad];
 	// intUI
-    
+    [self setNeedsStatusBarAppearanceUpdate];
     self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"webbg"]];
     //[self.navigationController setNavigationBarHidden:YES];
     
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
         // iOS 7
-        [self prefersStatusBarHidden];
+        //[self prefersStatusBarHidden];
         [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
     }
+    
+    UIImageView *bannerView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"index_banner.jpg"]];
+    [bannerView setContentMode:UIViewContentModeCenter];
+    if (IS_IPHONE5) {
+        [bannerView setFrame:CGRectMake(0, 20, 320, 255)];
+    }else{
+        [bannerView setFrame:CGRectMake(0, 1, 320, 220)];
+    }
+    [self.view insertSubview:bannerView atIndex:0];
+    
     
     //intro page
     IntroViewController *introView = [self.storyboard instantiateViewControllerWithIdentifier:@"introViewController"];
@@ -67,6 +81,12 @@
                                     repeats: NO];
    
     [introView.telBtn addTarget:self action:@selector(telAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    HUD = [[MBProgressHUD alloc] initWithView:self.view];
+    HUD.mode = MBProgressHUDModeCustomView;
+ 
+    [self.navigationController.view addSubview:HUD];
+	HUD.labelText = @"栏目维护中...";
 }
 -(void)telAction
 {
@@ -84,7 +104,10 @@
 
 - (BOOL)prefersStatusBarHidden
 {
-    return YES;//隐藏为YES，显示为NO
+    return NO;//隐藏为YES，显示为NO
+}
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)timerAct
@@ -113,6 +136,16 @@
     [self.navigationController pushViewController:drawerController animated:YES];
     
 }
+-(IBAction)pushAction4:(id)sender
+{
+    
+	[HUD show:YES];
+    [HUD hide:YES afterDelay:2];
+   
+}
+
+
+
 
 - (void)didReceiveMemoryWarning
 {

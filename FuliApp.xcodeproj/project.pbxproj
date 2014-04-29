@@ -66,12 +66,6 @@
 		A97B63DA18F79DC20008F9F0 /* local@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A97B63D718F79DC20008F9F0 /* local@2x.jpg */; };
 		A97B63DE18F7B81E0008F9F0 /* Content_2_3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B63DD18F7B81E0008F9F0 /* Content_2_3_ViewController.m */; };
 		A97B63E118F7B8D30008F9F0 /* Content_2_4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B63E018F7B8D30008F9F0 /* Content_2_4_ViewController.m */; };
-		A97B63F018F7C58B0008F9F0 /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B63E418F7C58B0008F9F0 /* DCCrossHairView.m */; };
-		A97B63F118F7C58B0008F9F0 /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B63E618F7C58B0008F9F0 /* DCFrameView.m */; };
-		A97B63F218F7C58B0008F9F0 /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B63E818F7C58B0008F9F0 /* DCIntrospect.m */; };
-		A97B63F318F7C58B0008F9F0 /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B63EB18F7C58B0008F9F0 /* DCStatusBarOverlay.m */; };
-		A97B63F418F7C58B0008F9F0 /* DCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B63ED18F7C58B0008F9F0 /* DCTextView.m */; };
-		A97B63F518F7C58B0008F9F0 /* UIView+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B63EF18F7C58B0008F9F0 /* UIView+DCAdditions.m */; };
 		A97CC0AF18F51B4500C36E01 /* Content_1_2_2_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97CC0AE18F51B4500C36E01 /* Content_1_2_2_1_ViewController.m */; };
 		A97CC0B218F5227100C36E01 /* Content_1_3_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97CC0B118F5227100C36E01 /* Content_1_3_1_ViewController.m */; };
 		A97CC0B518F5397100C36E01 /* Content_1_4_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97CC0B418F5397100C36E01 /* Content_1_4_1_ViewController.m */; };
@@ -112,6 +106,9 @@
 		A9D73DDE18ED0F4B0014BD47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D73DDC18ED0F4B0014BD47 /* Main.storyboard */; };
 		A9D73DE118ED0F4B0014BD47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D73DE018ED0F4B0014BD47 /* ViewController.m */; };
 		A9D73DE318ED0F4B0014BD47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D73DE218ED0F4B0014BD47 /* Images.xcassets */; };
+		A9F32621190BFEE300F12D0D /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F32620190BFEE300F12D0D /* Reveal.framework */; };
+		A9F32623190BFF0600F12D0D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F32622190BFF0600F12D0D /* CFNetwork.framework */; };
+		A9F32625190BFF1000F12D0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F32624190BFF1000F12D0D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -201,19 +198,6 @@
 		A97B63DD18F7B81E0008F9F0 /* Content_2_3_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Content_2_3_ViewController.m; path = Controllers/Content_2_3_ViewController.m; sourceTree = "<group>"; };
 		A97B63DF18F7B8D30008F9F0 /* Content_2_4_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Content_2_4_ViewController.h; path = Controllers/Content_2_4_ViewController.h; sourceTree = "<group>"; };
 		A97B63E018F7B8D30008F9F0 /* Content_2_4_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Content_2_4_ViewController.m; path = Controllers/Content_2_4_ViewController.m; sourceTree = "<group>"; };
-		A97B63E318F7C58B0008F9F0 /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = "<group>"; };
-		A97B63E418F7C58B0008F9F0 /* DCCrossHairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCrossHairView.m; sourceTree = "<group>"; };
-		A97B63E518F7C58B0008F9F0 /* DCFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFrameView.h; sourceTree = "<group>"; };
-		A97B63E618F7C58B0008F9F0 /* DCFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFrameView.m; sourceTree = "<group>"; };
-		A97B63E718F7C58B0008F9F0 /* DCIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospect.h; sourceTree = "<group>"; };
-		A97B63E818F7C58B0008F9F0 /* DCIntrospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCIntrospect.m; sourceTree = "<group>"; };
-		A97B63E918F7C58B0008F9F0 /* DCIntrospectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospectSettings.h; sourceTree = "<group>"; };
-		A97B63EA18F7C58B0008F9F0 /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = "<group>"; };
-		A97B63EB18F7C58B0008F9F0 /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStatusBarOverlay.m; sourceTree = "<group>"; };
-		A97B63EC18F7C58B0008F9F0 /* DCTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTextView.h; sourceTree = "<group>"; };
-		A97B63ED18F7C58B0008F9F0 /* DCTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTextView.m; sourceTree = "<group>"; };
-		A97B63EE18F7C58B0008F9F0 /* UIView+DCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCAdditions.h"; sourceTree = "<group>"; };
-		A97B63EF18F7C58B0008F9F0 /* UIView+DCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCAdditions.m"; sourceTree = "<group>"; };
 		A97CC0AD18F51B4500C36E01 /* Content_1_2_2_1_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Content_1_2_2_1_ViewController.h; path = Controllers/Content_1_2_2_1_ViewController.h; sourceTree = "<group>"; };
 		A97CC0AE18F51B4500C36E01 /* Content_1_2_2_1_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Content_1_2_2_1_ViewController.m; path = Controllers/Content_1_2_2_1_ViewController.m; sourceTree = "<group>"; };
 		A97CC0B018F5227100C36E01 /* Content_1_3_1_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Content_1_3_1_ViewController.h; path = Controllers/Content_1_3_1_ViewController.h; sourceTree = "<group>"; };
@@ -275,6 +259,9 @@
 		A9D73DF118ED0F4B0014BD47 /* FuliAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FuliAppTests-Info.plist"; sourceTree = "<group>"; };
 		A9D73DF318ED0F4B0014BD47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9D73DF518ED0F4B0014BD47 /* FuliAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuliAppTests.m; sourceTree = "<group>"; };
+		A9F32620190BFEE300F12D0D /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		A9F32622190BFF0600F12D0D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A9F32624190BFF1000F12D0D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,8 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D73DCD18ED0F4B0014BD47 /* CoreGraphics.framework in Frameworks */,
+				A9F32625190BFF1000F12D0D /* QuartzCore.framework in Frameworks */,
+				A9F32623190BFF0600F12D0D /* CFNetwork.framework in Frameworks */,
 				A9D73DCF18ED0F4B0014BD47 /* UIKit.framework in Frameworks */,
 				A9D73DCB18ED0F4B0014BD47 /* Foundation.framework in Frameworks */,
+				A9F32621190BFEE300F12D0D /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +331,6 @@
 		A92AD0B818ED378800F5795A /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				A97B63E218F7C58B0008F9F0 /* DCIntrospect-ARC */,
 				A965C0F918F63ABF0019D2F9 /* MMDrawerController */,
 				A97CC0C218F5506500C36E01 /* NSString+FontAwesome.h */,
 				A97CC0C318F5506500C36E01 /* NSString+FontAwesome.m */,
@@ -481,26 +470,6 @@
 			name = Content2;
 			sourceTree = "<group>";
 		};
-		A97B63E218F7C58B0008F9F0 /* DCIntrospect-ARC */ = {
-			isa = PBXGroup;
-			children = (
-				A97B63E318F7C58B0008F9F0 /* DCCrossHairView.h */,
-				A97B63E418F7C58B0008F9F0 /* DCCrossHairView.m */,
-				A97B63E518F7C58B0008F9F0 /* DCFrameView.h */,
-				A97B63E618F7C58B0008F9F0 /* DCFrameView.m */,
-				A97B63E718F7C58B0008F9F0 /* DCIntrospect.h */,
-				A97B63E818F7C58B0008F9F0 /* DCIntrospect.m */,
-				A97B63E918F7C58B0008F9F0 /* DCIntrospectSettings.h */,
-				A97B63EA18F7C58B0008F9F0 /* DCStatusBarOverlay.h */,
-				A97B63EB18F7C58B0008F9F0 /* DCStatusBarOverlay.m */,
-				A97B63EC18F7C58B0008F9F0 /* DCTextView.h */,
-				A97B63ED18F7C58B0008F9F0 /* DCTextView.m */,
-				A97B63EE18F7C58B0008F9F0 /* UIView+DCAdditions.h */,
-				A97B63EF18F7C58B0008F9F0 /* UIView+DCAdditions.m */,
-			);
-			path = "DCIntrospect-ARC";
-			sourceTree = "<group>";
-		};
 		A9D73DBE18ED0F4B0014BD47 = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +491,9 @@
 		A9D73DC918ED0F4B0014BD47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9F32624190BFF1000F12D0D /* QuartzCore.framework */,
+				A9F32622190BFF0600F12D0D /* CFNetwork.framework */,
+				A9F32620190BFEE300F12D0D /* Reveal.framework */,
 				A9D73DCA18ED0F4B0014BD47 /* Foundation.framework */,
 				A9D73DCC18ED0F4B0014BD47 /* CoreGraphics.framework */,
 				A9D73DCE18ED0F4B0014BD47 /* UIKit.framework */,
@@ -708,16 +680,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A97B63F018F7C58B0008F9F0 /* DCCrossHairView.m in Sources */,
 				A97CC0B218F5227100C36E01 /* Content_1_3_1_ViewController.m in Sources */,
 				A9D73DE118ED0F4B0014BD47 /* ViewController.m in Sources */,
 				A965C10518F63ABF0019D2F9 /* MMDrawerVisualState.m in Sources */,
-				A97B63F318F7C58B0008F9F0 /* DCStatusBarOverlay.m in Sources */,
 				A9A7A25A190796980086C232 /* Content_1_4_ViewController.m in Sources */,
 				A9B762AB190664FE00046C52 /* Content_1_2_ViewController.m in Sources */,
 				A92AD0BF18ED378800F5795A /* MHTabBarSegue.m in Sources */,
 				A91B85101908EE8B008B9BFD /* Content_5_3_ViewController.m in Sources */,
-				A97B63F218F7C58B0008F9F0 /* DCIntrospect.m in Sources */,
 				A91B850A1908EE6B008B9BFD /* Content_5_1_ViewController.m in Sources */,
 				A965C11818F676F20019D2F9 /* Content_2C_ViewController.m in Sources */,
 				A9A7A26D1907CE9F0086C232 /* XppUtil.m in Sources */,
@@ -727,10 +696,7 @@
 				A91E7DFA18F3CFFB009DC4B4 /* WebShowViewController.m in Sources */,
 				A97B63DE18F7B81E0008F9F0 /* Content_2_3_ViewController.m in Sources */,
 				A910D43F18F68E3200A2DB70 /* Content_2_1_ViewController.m in Sources */,
-				A97B63F518F7C58B0008F9F0 /* UIView+DCAdditions.m in Sources */,
 				A965C10C18F641560019D2F9 /* RootMenuViewController.m in Sources */,
-				A97B63F418F7C58B0008F9F0 /* DCTextView.m in Sources */,
-				A97B63F118F7C58B0008F9F0 /* DCFrameView.m in Sources */,
 				A92AD0C718ED768E00F5795A /* TestTableViewController.m in Sources */,
 				A9D73DDB18ED0F4B0014BD47 /* AppDelegate.m in Sources */,
 				A91B85071908E390008B9BFD /* Content_5_ViewController.m in Sources */,
@@ -872,10 +838,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FuliApp/FuliApp-Prefix.pch";
 				INFOPLIST_FILE = "FuliApp/FuliApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -889,10 +860,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FuliApp/FuliApp-Prefix.pch";
 				INFOPLIST_FILE = "FuliApp/FuliApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

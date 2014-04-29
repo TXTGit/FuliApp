@@ -19,7 +19,7 @@
 
 -(IBAction)pushAction2:(id)sender;
 
-
+-(IBAction)pushAction4:(id)sender;
 
 
 @end

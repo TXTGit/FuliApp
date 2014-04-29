@@ -7,15 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "DCIntrospect.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
-    
-    [[DCIntrospect sharedIntrospector] start];
     
     return YES;
 }
