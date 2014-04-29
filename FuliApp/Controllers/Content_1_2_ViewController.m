@@ -43,7 +43,7 @@
 {
     [super viewWillAppear:animated];
 
-    
+    /* ▼背景动画开始▼ */
     CABasicAnimation *ani1 = [CABasicAnimation animationWithKeyPath:@"transform.translation.x"];
     ani1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     ani1.fromValue = [NSNumber numberWithInt:0];
@@ -65,7 +65,7 @@
     group.fillMode = kCAFillModeForwards;
     group.removedOnCompletion = NO;
     [self.imgLayer addAnimation:group forKey:@"position"];
-
+    /* ▲背景动画结束▲ */
 }
 
 
