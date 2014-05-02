@@ -13,14 +13,14 @@ $(function($) {
 	var $fixBar = $('#fixBar');
 	var $showFixBar = $('#showFixBar');
 	var $hideFixBar = $('#hideFixBar');
-	$showFixBar.on('tap', function(e) {
+	$showFixBar.on('click', function(e) {
 		$fixBar.animate({
 		  right: '0'
 		}, 350, 'ease-out');
 		$showFixBar.hide();
 		$hideFixBar.show();
 	});
-	$hideFixBar.on('tap', function(e) {
+	$hideFixBar.on('click', function(e) {
 		$fixBar.animate({
 		  right: '-101px'
 		}, 350, 'ease-out');

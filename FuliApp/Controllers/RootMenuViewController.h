@@ -16,6 +16,7 @@
 
 @property (nonatomic, strong)IBOutlet UIView *menuView;
 
+@property (nonatomic,strong)IBOutlet UIView *statusMask;
 
 -(IBAction)pushAction2:(id)sender;
 

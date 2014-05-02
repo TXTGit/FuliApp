@@ -37,7 +37,6 @@
 		A92AD0BF18ED378800F5795A /* MHTabBarSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD0BD18ED378800F5795A /* MHTabBarSegue.m */; };
 		A92AD0C218ED3BC000F5795A /* tarbgbar_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A92AD0C118ED3BC000F5795A /* tarbgbar_on@2x.png */; };
 		A92AD0C418ED47D000F5795A /* tarbgbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A92AD0C318ED47D000F5795A /* tarbgbar@2x.png */; };
-		A92AD0C718ED768E00F5795A /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD0C618ED768E00F5795A /* TestTableViewController.m */; };
 		A93BADF818F4F051005E3361 /* Content_1_2_1_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93BADF718F4F051005E3361 /* Content_1_2_1_1_ViewController.m */; };
 		A9507CAA1904F0AF00016C2D /* intro1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9507CA71904F0AF00016C2D /* intro1@2x.jpg */; };
 		A9507CAB1904F0AF00016C2D /* intro2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9507CA81904F0AF00016C2D /* intro2@2x.jpg */; };
@@ -54,6 +53,11 @@
 		A955FC9D190A048500A21C22 /* icon-120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A955FC9A190A048500A21C22 /* icon-120@2x.png */; };
 		A955FCA0190A0A3200A21C22 /* tarbtnbg_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A955FC9E190A0A3200A21C22 /* tarbtnbg_on@2x.png */; };
 		A955FCA1190A0A3200A21C22 /* tarbtnbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A955FC9F190A0A3200A21C22 /* tarbtnbg@2x.png */; };
+		A95B54F41913C9EB00912412 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A95B54F31913C9EB00912412 /* libz.dylib */; };
+		A95B54F71913CAAA00912412 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A95B54F51913CAAA00912412 /* libMobClickLibrary.a */; };
+		A95B55001913D08000912412 /* RavenClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A95B54FA1913D08000912412 /* RavenClient.m */; };
+		A95B55011913D08000912412 /* RavenConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A95B54FD1913D08000912412 /* RavenConfig.m */; };
+		A95B55021913D08000912412 /* RavenJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A95B54FF1913D08000912412 /* RavenJSONUtilities.m */; };
 		A965C10318F63ABF0019D2F9 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A965C0FB18F63ABF0019D2F9 /* MMDrawerBarButtonItem.m */; };
 		A965C10418F63ABF0019D2F9 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A965C0FE18F63ABF0019D2F9 /* MMDrawerController.m */; };
 		A965C10518F63ABF0019D2F9 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = A965C10018F63ABF0019D2F9 /* MMDrawerVisualState.m */; };
@@ -67,7 +71,6 @@
 		A97B63DE18F7B81E0008F9F0 /* Content_2_3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B63DD18F7B81E0008F9F0 /* Content_2_3_ViewController.m */; };
 		A97B63E118F7B8D30008F9F0 /* Content_2_4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B63E018F7B8D30008F9F0 /* Content_2_4_ViewController.m */; };
 		A97CC0AF18F51B4500C36E01 /* Content_1_2_2_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97CC0AE18F51B4500C36E01 /* Content_1_2_2_1_ViewController.m */; };
-		A97CC0B218F5227100C36E01 /* Content_1_3_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97CC0B118F5227100C36E01 /* Content_1_3_1_ViewController.m */; };
 		A97CC0B518F5397100C36E01 /* Content_1_4_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97CC0B418F5397100C36E01 /* Content_1_4_1_ViewController.m */; };
 		A97CC0B818F5409500C36E01 /* WithBackBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97CC0B718F5409500C36E01 /* WithBackBtnViewController.m */; };
 		A97CC0BA18F541E100C36E01 /* backBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A97CC0B918F541E100C36E01 /* backBtn@2x.png */; };
@@ -97,6 +100,7 @@
 		A9B762A419065BC400046C52 /* CirButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B762A319065BC400046C52 /* CirButton.m */; };
 		A9B762AB190664FE00046C52 /* Content_1_2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B762AA190664FE00046C52 /* Content_1_2_ViewController.m */; };
 		A9C0EF541909176500E1A38D /* Content_3_2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C0EF531909176500E1A38D /* Content_3_2_ViewController.m */; };
+		A9D430A81913403B00E5B1F6 /* Content_1_3_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97CC0B118F5227100C36E01 /* Content_1_3_1_ViewController.m */; };
 		A9D73DCB18ED0F4B0014BD47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D73DCA18ED0F4B0014BD47 /* Foundation.framework */; };
 		A9D73DCD18ED0F4B0014BD47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D73DCC18ED0F4B0014BD47 /* CoreGraphics.framework */; };
 		A9D73DCF18ED0F4B0014BD47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D73DCE18ED0F4B0014BD47 /* UIKit.framework */; };
@@ -104,8 +108,10 @@
 		A9D73DD718ED0F4B0014BD47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D73DD618ED0F4B0014BD47 /* main.m */; };
 		A9D73DDB18ED0F4B0014BD47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D73DDA18ED0F4B0014BD47 /* AppDelegate.m */; };
 		A9D73DDE18ED0F4B0014BD47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D73DDC18ED0F4B0014BD47 /* Main.storyboard */; };
-		A9D73DE118ED0F4B0014BD47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D73DE018ED0F4B0014BD47 /* ViewController.m */; };
 		A9D73DE318ED0F4B0014BD47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D73DE218ED0F4B0014BD47 /* Images.xcassets */; };
+		A9F0786B190F9A6600655C05 /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F0786A190F9A6600655C05 /* BaseNavViewController.m */; };
+		A9F07870190FA65A00655C05 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F0786F190FA65A00655C05 /* UncaughtExceptionHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A9F07874190FBEA100655C05 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F07873190FBEA100655C05 /* Reachability.m */; };
 		A9F32621190BFEE300F12D0D /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F32620190BFEE300F12D0D /* Reveal.framework */; };
 		A9F32623190BFF0600F12D0D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F32622190BFF0600F12D0D /* CFNetwork.framework */; };
 		A9F32625190BFF1000F12D0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F32624190BFF1000F12D0D /* QuartzCore.framework */; };
@@ -155,8 +161,6 @@
 		A92AD0BD18ED378800F5795A /* MHTabBarSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTabBarSegue.m; sourceTree = "<group>"; };
 		A92AD0C118ED3BC000F5795A /* tarbgbar_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tarbgbar_on@2x.png"; sourceTree = "<group>"; };
 		A92AD0C318ED47D000F5795A /* tarbgbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tarbgbar@2x.png"; sourceTree = "<group>"; };
-		A92AD0C518ED768E00F5795A /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
-		A92AD0C618ED768E00F5795A /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		A93BADF618F4F051005E3361 /* Content_1_2_1_1_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Content_1_2_1_1_ViewController.h; path = Controllers/Content_1_2_1_1_ViewController.h; sourceTree = "<group>"; };
 		A93BADF718F4F051005E3361 /* Content_1_2_1_1_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Content_1_2_1_1_ViewController.m; path = Controllers/Content_1_2_1_1_ViewController.m; sourceTree = "<group>"; };
 		A9507CA71904F0AF00016C2D /* intro1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "intro1@2x.jpg"; sourceTree = "<group>"; };
@@ -175,6 +179,16 @@
 		A955FC9A190A048500A21C22 /* icon-120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-120@2x.png"; sourceTree = "<group>"; };
 		A955FC9E190A0A3200A21C22 /* tarbtnbg_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tarbtnbg_on@2x.png"; sourceTree = "<group>"; };
 		A955FC9F190A0A3200A21C22 /* tarbtnbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tarbtnbg@2x.png"; sourceTree = "<group>"; };
+		A95B54F31913C9EB00912412 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A95B54F51913CAAA00912412 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		A95B54F61913CAAA00912412 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		A95B54F91913D08000912412 /* RavenClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenClient.h; sourceTree = "<group>"; };
+		A95B54FA1913D08000912412 /* RavenClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenClient.m; sourceTree = "<group>"; };
+		A95B54FB1913D08000912412 /* RavenClient_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenClient_Private.h; sourceTree = "<group>"; };
+		A95B54FC1913D08000912412 /* RavenConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenConfig.h; sourceTree = "<group>"; };
+		A95B54FD1913D08000912412 /* RavenConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenConfig.m; sourceTree = "<group>"; };
+		A95B54FE1913D08000912412 /* RavenJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenJSONUtilities.h; sourceTree = "<group>"; };
+		A95B54FF1913D08000912412 /* RavenJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenJSONUtilities.m; sourceTree = "<group>"; };
 		A965C0FA18F63ABF0019D2F9 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		A965C0FB18F63ABF0019D2F9 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		A965C0FC18F63ABF0019D2F9 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
@@ -252,13 +266,17 @@
 		A9D73DD918ED0F4B0014BD47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9D73DDA18ED0F4B0014BD47 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A9D73DDD18ED0F4B0014BD47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A9D73DDF18ED0F4B0014BD47 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A9D73DE018ED0F4B0014BD47 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A9D73DE218ED0F4B0014BD47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9D73DE918ED0F4B0014BD47 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A9D73DF118ED0F4B0014BD47 /* FuliAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FuliAppTests-Info.plist"; sourceTree = "<group>"; };
 		A9D73DF318ED0F4B0014BD47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9D73DF518ED0F4B0014BD47 /* FuliAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuliAppTests.m; sourceTree = "<group>"; };
+		A9F07869190F9A6600655C05 /* BaseNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNavViewController.h; path = Controllers/BaseNavViewController.h; sourceTree = "<group>"; };
+		A9F0786A190F9A6600655C05 /* BaseNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNavViewController.m; path = Controllers/BaseNavViewController.m; sourceTree = "<group>"; };
+		A9F0786E190FA65A00655C05 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		A9F0786F190FA65A00655C05 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		A9F07872190FBEA100655C05 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A9F07873190FBEA100655C05 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		A9F32620190BFEE300F12D0D /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		A9F32622190BFF0600F12D0D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A9F32624190BFF1000F12D0D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -269,8 +287,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A95B54F41913C9EB00912412 /* libz.dylib in Frameworks */,
 				A9D73DCD18ED0F4B0014BD47 /* CoreGraphics.framework in Frameworks */,
 				A9F32625190BFF1000F12D0D /* QuartzCore.framework in Frameworks */,
+				A95B54F71913CAAA00912412 /* libMobClickLibrary.a in Frameworks */,
 				A9F32623190BFF0600F12D0D /* CFNetwork.framework in Frameworks */,
 				A9D73DCF18ED0F4B0014BD47 /* UIKit.framework in Frameworks */,
 				A9D73DCB18ED0F4B0014BD47 /* Foundation.framework in Frameworks */,
@@ -324,6 +344,8 @@
 				A965C10B18F641560019D2F9 /* RootMenuViewController.m */,
 				A9507CAD1904F5DA00016C2D /* IntroViewController.h */,
 				A9507CAE1904F5DA00016C2D /* IntroViewController.m */,
+				A9F07869190F9A6600655C05 /* BaseNavViewController.h */,
+				A9F0786A190F9A6600655C05 /* BaseNavViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -331,6 +353,7 @@
 		A92AD0B818ED378800F5795A /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A9F0786D190FA63800655C05 /* Exception */,
 				A965C0F918F63ABF0019D2F9 /* MMDrawerController */,
 				A97CC0C218F5506500C36E01 /* NSString+FontAwesome.h */,
 				A97CC0C318F5506500C36E01 /* NSString+FontAwesome.m */,
@@ -408,6 +431,21 @@
 				A92AD0C118ED3BC000F5795A /* tarbgbar_on@2x.png */,
 			);
 			path = assets;
+			sourceTree = "<group>";
+		};
+		A95B54F81913D08000912412 /* Raven */ = {
+			isa = PBXGroup;
+			children = (
+				A95B54F91913D08000912412 /* RavenClient.h */,
+				A95B54FA1913D08000912412 /* RavenClient.m */,
+				A95B54FB1913D08000912412 /* RavenClient_Private.h */,
+				A95B54FC1913D08000912412 /* RavenConfig.h */,
+				A95B54FD1913D08000912412 /* RavenConfig.m */,
+				A95B54FE1913D08000912412 /* RavenJSONUtilities.h */,
+				A95B54FF1913D08000912412 /* RavenJSONUtilities.m */,
+			);
+			name = Raven;
+			path = Base/Raven;
 			sourceTree = "<group>";
 		};
 		A965C0F918F63ABF0019D2F9 /* MMDrawerController */ = {
@@ -491,6 +529,7 @@
 		A9D73DC918ED0F4B0014BD47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A95B54F31913C9EB00912412 /* libz.dylib */,
 				A9F32624190BFF1000F12D0D /* QuartzCore.framework */,
 				A9F32622190BFF0600F12D0D /* CFNetwork.framework */,
 				A9F32620190BFEE300F12D0D /* Reveal.framework */,
@@ -505,16 +544,15 @@
 		A9D73DD018ED0F4B0014BD47 /* FuliApp */ = {
 			isa = PBXGroup;
 			children = (
+				A95B54F81913D08000912412 /* Raven */,
+				A95B54F51913CAAA00912412 /* libMobClickLibrary.a */,
+				A95B54F61913CAAA00912412 /* MobClick.h */,
 				A91E7E0F18F3D97C009DC4B4 /* webPage */,
 				A91E7DF418F3CE3C009DC4B4 /* Controllers */,
 				A92AD0B818ED378800F5795A /* Base */,
 				A9D73DD918ED0F4B0014BD47 /* AppDelegate.h */,
 				A9D73DDA18ED0F4B0014BD47 /* AppDelegate.m */,
 				A9D73DDC18ED0F4B0014BD47 /* Main.storyboard */,
-				A92AD0C518ED768E00F5795A /* TestTableViewController.h */,
-				A92AD0C618ED768E00F5795A /* TestTableViewController.m */,
-				A9D73DDF18ED0F4B0014BD47 /* ViewController.h */,
-				A9D73DE018ED0F4B0014BD47 /* ViewController.m */,
 				A9D73DE218ED0F4B0014BD47 /* Images.xcassets */,
 				A9D73DD118ED0F4B0014BD47 /* Supporting Files */,
 			);
@@ -555,6 +593,17 @@
 				A9D73DF218ED0F4B0014BD47 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9F0786D190FA63800655C05 /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				A9F07872190FBEA100655C05 /* Reachability.h */,
+				A9F07873190FBEA100655C05 /* Reachability.m */,
+				A9F0786E190FA65A00655C05 /* UncaughtExceptionHandler.h */,
+				A9F0786F190FA65A00655C05 /* UncaughtExceptionHandler.m */,
+			);
+			name = Exception;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -680,12 +729,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A97CC0B218F5227100C36E01 /* Content_1_3_1_ViewController.m in Sources */,
-				A9D73DE118ED0F4B0014BD47 /* ViewController.m in Sources */,
+				A9D430A81913403B00E5B1F6 /* Content_1_3_1_ViewController.m in Sources */,
 				A965C10518F63ABF0019D2F9 /* MMDrawerVisualState.m in Sources */,
 				A9A7A25A190796980086C232 /* Content_1_4_ViewController.m in Sources */,
 				A9B762AB190664FE00046C52 /* Content_1_2_ViewController.m in Sources */,
 				A92AD0BF18ED378800F5795A /* MHTabBarSegue.m in Sources */,
+				A95B55001913D08000912412 /* RavenClient.m in Sources */,
 				A91B85101908EE8B008B9BFD /* Content_5_3_ViewController.m in Sources */,
 				A91B850A1908EE6B008B9BFD /* Content_5_1_ViewController.m in Sources */,
 				A965C11818F676F20019D2F9 /* Content_2C_ViewController.m in Sources */,
@@ -694,10 +743,10 @@
 				A91436511909078300A6C5EC /* Content_3_1_ViewController.m in Sources */,
 				A93BADF818F4F051005E3361 /* Content_1_2_1_1_ViewController.m in Sources */,
 				A91E7DFA18F3CFFB009DC4B4 /* WebShowViewController.m in Sources */,
+				A9F07874190FBEA100655C05 /* Reachability.m in Sources */,
 				A97B63DE18F7B81E0008F9F0 /* Content_2_3_ViewController.m in Sources */,
 				A910D43F18F68E3200A2DB70 /* Content_2_1_ViewController.m in Sources */,
 				A965C10C18F641560019D2F9 /* RootMenuViewController.m in Sources */,
-				A92AD0C718ED768E00F5795A /* TestTableViewController.m in Sources */,
 				A9D73DDB18ED0F4B0014BD47 /* AppDelegate.m in Sources */,
 				A91B85071908E390008B9BFD /* Content_5_ViewController.m in Sources */,
 				A97CC0B818F5409500C36E01 /* WithBackBtnViewController.m in Sources */,
@@ -706,6 +755,8 @@
 				A9D73DD718ED0F4B0014BD47 /* main.m in Sources */,
 				A9A7A2571907964E0086C232 /* Content_1_3_ViewController.m in Sources */,
 				A9507CAF1904F5DA00016C2D /* IntroViewController.m in Sources */,
+				A95B55021913D08000912412 /* RavenJSONUtilities.m in Sources */,
+				A9F07870190FA65A00655C05 /* UncaughtExceptionHandler.m in Sources */,
 				A9C0EF541909176500E1A38D /* Content_3_2_ViewController.m in Sources */,
 				A91B84F51908ACF3008B9BFD /* Content_3_ViewController.m in Sources */,
 				A9A7A2691907BD4A0086C232 /* TrButton.m in Sources */,
@@ -717,10 +768,12 @@
 				A91B850D1908EE7C008B9BFD /* Content_5_2_ViewController.m in Sources */,
 				A97CC0B518F5397100C36E01 /* Content_1_4_1_ViewController.m in Sources */,
 				A97B63E118F7B8D30008F9F0 /* Content_2_4_ViewController.m in Sources */,
+				A95B55011913D08000912412 /* RavenConfig.m in Sources */,
 				A965C10318F63ABF0019D2F9 /* MMDrawerBarButtonItem.m in Sources */,
 				A91E7DFD18F3D054009DC4B4 /* MBProgressHUD.m in Sources */,
 				A97CC0AF18F51B4500C36E01 /* Content_1_2_2_1_ViewController.m in Sources */,
 				A965C10918F63DDA0019D2F9 /* Content_2_ViewController.m in Sources */,
+				A9F0786B190F9A6600655C05 /* BaseNavViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,7 +812,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -789,10 +842,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "南京富力城";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -800,7 +856,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -824,16 +880,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "南京富力城";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
 		A9D73DFA18ED0F4B0014BD47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -845,10 +905,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FuliApp/FuliApp-Prefix.pch";
 				INFOPLIST_FILE = "FuliApp/FuliApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FuliApp",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -856,6 +921,7 @@
 		A9D73DFB18ED0F4B0014BD47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -867,10 +933,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FuliApp/FuliApp-Prefix.pch";
 				INFOPLIST_FILE = "FuliApp/FuliApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FuliApp",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

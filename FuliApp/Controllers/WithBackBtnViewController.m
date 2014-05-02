@@ -34,7 +34,7 @@
 -(void)setupBackButton{
     //UIImage* image= [UIImage imageNamed:@"backBtn"];
     //UIImage* imageOn= [UIImage imageNamed:@"back_btn_on"];
-    UIButton* leftButton= [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    UIButton* leftButton= [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 44)];
     //[leftButton setBackgroundImage:image forState:UIControlStateNormal];
     [leftButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     [leftButton.titleLabel setFont:[UIFont fontWithName:kFontAwesomeFamilyName size:26]];

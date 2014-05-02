@@ -59,7 +59,7 @@
 }
 
 - (void)finishCropping {
-	float zoomScale = 2.0 / [self.scrollView zoomScale];
+	float zoomScale = 2.8 / [self.scrollView zoomScale];
 	
 	CGRect rect;
 	rect.origin.x = [self.scrollView contentOffset].x * zoomScale;
